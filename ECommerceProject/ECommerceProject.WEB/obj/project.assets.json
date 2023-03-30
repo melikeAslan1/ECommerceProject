@@ -2,18 +2,18 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "Autofac/6.0.0": {
+      "Autofac/6.3.0": {
         "type": "package",
         "dependencies": {
           "System.Diagnostics.DiagnosticSource": "4.7.1"
         },
         "compile": {
-          "lib/netstandard2.1/Autofac.dll": {
+          "lib/net5.0/Autofac.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.1/Autofac.dll": {
+          "lib/net5.0/Autofac.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -3859,6 +3859,21 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "ECommerceProject.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Autofac": "6.3.0",
+          "ECommerceProject.DataAccess": "1.0.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/ECommerceProject.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ECommerceProject.Business.dll": {}
+        }
+      },
       "ECommerceProject.DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3893,16 +3908,19 @@
     }
   },
   "libraries": {
-    "Autofac/6.0.0": {
-      "sha512": "tRVRXGxwXbQmPy1ZGso115O55ffVW4mWtufjOy7hduQ1BNVR1j7RQQjxpYuB6tJw5OrgqRWYVJLJ8RwYNz/j+A==",
+    "Autofac/6.3.0": {
+      "sha512": "gO4bli0N8tDnBHzbYktcnbXlmN6T+IT5W+FUGgCUaM6pwwHXIxOPoUGvfGum7sZpJJgfQNgjFFv80ZPuARgRdA==",
       "type": "package",
-      "path": "autofac/6.0.0",
+      "path": "autofac/6.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "autofac.6.0.0.nupkg.sha512",
+        "autofac.6.3.0.nupkg.sha512",
         "autofac.nuspec",
         "icon.png",
+        "lib/net5.0/Autofac.dll",
+        "lib/net5.0/Autofac.pdb",
+        "lib/net5.0/Autofac.xml",
         "lib/netstandard2.0/Autofac.dll",
         "lib/netstandard2.0/Autofac.pdb",
         "lib/netstandard2.0/Autofac.xml",
@@ -10562,6 +10580,11 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "ECommerceProject.Business/1.0.0": {
+      "type": "project",
+      "path": "../ECommerceProject.Business/ECommerceProject.Business.csproj",
+      "msbuildProject": "../ECommerceProject.Business/ECommerceProject.Business.csproj"
+    },
     "ECommerceProject.DataAccess/1.0.0": {
       "type": "project",
       "path": "../ECommerceProject.DataAccess/ECommerceProject.DataAccess.csproj",
@@ -10576,6 +10599,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Autofac.Extensions.DependencyInjection >= 7.2.0",
+      "ECommerceProject.Business >= 1.0.0",
       "ECommerceProject.DataAccess >= 1.0.0",
       "ECommerceProject.Entity >= 1.0.0",
       "Microsoft.AspNetCore.Identity >= 2.2.0",
@@ -10617,6 +10641,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\MelikeAslan\\Documents\\GitHub\\ECommerceProjectCase\\ECommerceProject\\ECommerceProject.Business\\ECommerceProject.Business.csproj": {
+              "projectPath": "C:\\Users\\MelikeAslan\\Documents\\GitHub\\ECommerceProjectCase\\ECommerceProject\\ECommerceProject.Business\\ECommerceProject.Business.csproj"
+            },
             "C:\\Users\\MelikeAslan\\Documents\\GitHub\\ECommerceProjectCase\\ECommerceProject\\ECommerceProject.DataAccess\\ECommerceProject.DataAccess.csproj": {
               "projectPath": "C:\\Users\\MelikeAslan\\Documents\\GitHub\\ECommerceProjectCase\\ECommerceProject\\ECommerceProject.DataAccess\\ECommerceProject.DataAccess.csproj"
             },

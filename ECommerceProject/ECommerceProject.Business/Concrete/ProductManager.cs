@@ -1,4 +1,5 @@
 ﻿using ECommerceProject.Business.Abstract;
+using ECommerceProject.DataAccess.Abstract;
 using ECommerceProject.Entity.Models;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,13 @@ namespace ECommerceProject.Business.Concrete
 {
 	public class ProductManager : IProductService
 	{
+		private IProductRepo _productRepo;
+
+		public ProductManager(IProductRepo productRepo)
+		{
+			_productRepo = productRepo;
+		}
+
 		public void TAdd(Product entity)
 		{
 			throw new NotImplementedException();
@@ -25,9 +33,12 @@ namespace ECommerceProject.Business.Concrete
 			throw new NotImplementedException();
 		}
 
-		public List<Product> TGetList()
+		public async Task<List<Product>> TGetList()
 		{
-			throw new NotImplementedException();
+			var products = await _productRepo.GetList();
+
+			return products;
+			
 		}
 
 		public void TUpdate(Product entity)

@@ -14,7 +14,7 @@ namespace ECommerceProject.Business.Abstract
 
 		void TUpdate(T entity);
 
-		List<T> TGetList();
+		Task<List<T>> TGetList();
 
 		T TGetById(int id);	
 	}

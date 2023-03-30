@@ -33,12 +33,12 @@ namespace ECommerceProject.Business.Concrete
 			throw new NotImplementedException();
 		}
 
-		public List<Customer> TGetList()
+		public void TUpdate(Customer entity)
 		{
 			throw new NotImplementedException();
 		}
 
-		public void TUpdate(Customer entity)
+		Task<List<Customer>> IGenericService<Customer>.TGetList()
 		{
 			throw new NotImplementedException();
 		}

@@ -12,10 +12,12 @@ namespace ECommerceProject.WEB.Controllers
     public class LoginController : Controller
     {
         private readonly UserManager<AppUser> _userManager;
+		private readonly SignInManager<AppUser> _signInManager;
 
-        public LoginController(UserManager<AppUser> userManager)
+		public LoginController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
         {
             _userManager= userManager;
+			_signInManager= signInManager;
         }
 
         public IActionResult SignUp()
@@ -26,6 +28,7 @@ namespace ECommerceProject.WEB.Controllers
         [HttpPost]
         public async Task<IActionResult> SignUp(UserRegisterVM p)
         {
+			
 			AppUser appUser = new AppUser()
 			{
 				Name = p.Name,
@@ -48,8 +51,8 @@ namespace ECommerceProject.WEB.Controllers
 						ModelState.AddModelError("", item.Description);
 					}
 				}
-			}
-			return View(p);
+				}
+				return View(p);
 		}
 
         [HttpGet]
@@ -58,10 +61,22 @@ namespace ECommerceProject.WEB.Controllers
             return View();
         }
 
-        //[HttpPost]
-        //public IActionResult SignIn()
-        //{
-        //    return View();
-        //}
-    }
+		[HttpPost]
+		public async Task<IActionResult> SignIn(UserSignInViewModel p)
+		{
+			if (ModelState.IsValid)
+			{
+				var result = await _signInManager.PasswordSignInAsync(p.Username, p.Password, false, true);
+				if (result.Succeeded)
+				{
+					return RedirectToAction("Index", "Home");
+				}
+				else
+				{
+					return RedirectToAction("SignIn", "Login");
+				}
+			}
+			return View();
+		}
+	}
 }

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "aOq3QuAG5mfpNAU6mZ3Grw0ImaqZ6CYCcEjqYI9P3XWpkdn8NdG0aX4JHuwAg92+NkrpmTrEygkQJaOMg/1knQ==",
+  "dgSpecHash": "QQIYRc8H5fgEoG7xVThqe/74r4CH8S2auw5LBVtFzOrGDWNqdni2PvSi4VIv4moCnTKuR44vgwz+TZ8xP8WKqg==",
   "success": true,
   "projectFilePath": "C:\\Users\\MelikeAslan\\Documents\\GitHub\\ECommerceProjectCase\\ECommerceProject\\ECommerceProject.WEB\\ECommerceProject.WEB.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\MelikeAslan\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",
+    "C:\\Users\\MelikeAslan\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\MelikeAslan\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",
     "C:\\Users\\MelikeAslan\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\MelikeAslan\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

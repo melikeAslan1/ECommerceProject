@@ -17,7 +17,7 @@ namespace ECommerceProject.WEB.Models
 		public string Mail { get; set; }
 
 		[Required(ErrorMessage = "Lütfen Sifrenizi Giriniz")]
-		public string? Password { get; set; }
+		public string Password { get; set; }
 
 		[Required(ErrorMessage = "Lütfen Sifrenizi Tekrar Giriniz")]
 		[Compare("Password",ErrorMessage ="Sifreler Uyumlu Değil")]

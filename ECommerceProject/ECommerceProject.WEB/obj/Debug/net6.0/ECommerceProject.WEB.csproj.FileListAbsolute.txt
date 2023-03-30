@@ -551,3 +551,5 @@ C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECom
 C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.WEB\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.WEB\bin\Debug\net6.0\ECommerceProject.DataAccess.dll
 C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.WEB\bin\Debug\net6.0\ECommerceProject.DataAccess.pdb
+C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.WEB\bin\Debug\net6.0\ECommerceProject.Business.dll
+C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.WEB\bin\Debug\net6.0\ECommerceProject.Business.pdb

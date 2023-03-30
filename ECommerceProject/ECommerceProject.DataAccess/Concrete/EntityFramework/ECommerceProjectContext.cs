@@ -14,7 +14,7 @@ namespace ECommerceProject.DataAccess.Concrete.EntityFramework
     public class ECommerceProjectContext : IdentityDbContext<AppUser,AppRole,int>
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-           => optionsBuilder.UseNpgsql("Server=localhost;Port=5432;Database=ECommerceProjectCase-db;username=postgres;Password=123;", (e) => { e.EnableRetryOnFailure(); });
+           => optionsBuilder.UseNpgsql("Server=localhost;Port=5432;Database=ECommerceProject2-db;username=postgres;Password=123;", (e) => { e.EnableRetryOnFailure(); });
 
 
         public DbSet<Customer> Customers { get; set; }

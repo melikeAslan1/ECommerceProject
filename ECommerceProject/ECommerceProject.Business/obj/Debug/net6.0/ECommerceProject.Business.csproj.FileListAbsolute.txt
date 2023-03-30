@@ -10,3 +10,8 @@ C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECom
 C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.Business\obj\Debug\net6.0\refint\ECommerceProject.Business.dll
 C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.Business\obj\Debug\net6.0\ECommerceProject.Business.pdb
 C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.Business\obj\Debug\net6.0\ref\ECommerceProject.Business.dll
+C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.Business\bin\Debug\net6.0\ECommerceProject.DataAccess.dll
+C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.Business\bin\Debug\net6.0\ECommerceProject.Entity.dll
+C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.Business\bin\Debug\net6.0\ECommerceProject.DataAccess.pdb
+C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.Business\bin\Debug\net6.0\ECommerceProject.Entity.pdb
+C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.Business\obj\Debug\net6.0\ECommerceProject.Business.csproj.CopyComplete

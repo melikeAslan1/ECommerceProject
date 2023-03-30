@@ -10,6 +10,11 @@ namespace ECommerceProject.Business.Concrete
 {
 	public class ProductPictureManager : IProductPictureService
 	{
+		public Task<List<ProductPicture>> TGetList()
+		{
+			throw new NotImplementedException();
+		}
+
 		void IGenericService<ProductPicture>.TAdd(ProductPicture entity)
 		{
 			throw new NotImplementedException();
@@ -21,11 +26,6 @@ namespace ECommerceProject.Business.Concrete
 		}
 
 		ProductPicture IGenericService<ProductPicture>.TGetById(int id)
-		{
-			throw new NotImplementedException();
-		}
-
-		List<ProductPicture> IGenericService<ProductPicture>.TGetList()
 		{
 			throw new NotImplementedException();
 		}

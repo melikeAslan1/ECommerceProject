@@ -1,6 +1,7 @@
 using ECommerceProject.DataAccess.Concrete.EntityFramework;
 using ECommerceProject.Entities.IdentityModels;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +10,17 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ECommerceProjectContext>();  //
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<ECommerceProjectContext>();  //
+
+builder.Services.Configure<IdentityOptions>(options =>
+{
+	// Password settings
+	options.Password.RequireDigit = true;
+	options.Password.RequiredLength = 8;
+	options.Password.RequireNonAlphanumeric = false;
+	options.Password.RequireUppercase = true;
+	options.Password.RequireLowercase = true;
+	options.Password.RequiredUniqueChars = 6;
+});
 
 builder.Services.AddControllersWithViews();
 
