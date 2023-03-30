@@ -1,0 +1,12 @@
+C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.Business\bin\Debug\net6.0\ECommerceProject.Business.deps.json
+C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.Business\bin\Debug\net6.0\ECommerceProject.Business.dll
+C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.Business\bin\Debug\net6.0\ECommerceProject.Business.pdb
+C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.Business\obj\Debug\net6.0\ECommerceProject.Business.csproj.AssemblyReference.cache
+C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.Business\obj\Debug\net6.0\ECommerceProject.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.Business\obj\Debug\net6.0\ECommerceProject.Business.AssemblyInfoInputs.cache
+C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.Business\obj\Debug\net6.0\ECommerceProject.Business.AssemblyInfo.cs
+C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.Business\obj\Debug\net6.0\ECommerceProject.Business.csproj.CoreCompileInputs.cache
+C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.Business\obj\Debug\net6.0\ECommerceProject.Business.dll
+C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.Business\obj\Debug\net6.0\refint\ECommerceProject.Business.dll
+C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.Business\obj\Debug\net6.0\ECommerceProject.Business.pdb
+C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.Business\obj\Debug\net6.0\ref\ECommerceProject.Business.dll
