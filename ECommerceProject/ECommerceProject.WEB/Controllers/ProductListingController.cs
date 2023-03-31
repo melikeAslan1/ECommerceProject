@@ -7,29 +7,42 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerceProject.WEB.Controllers
 {
-	[AllowAnonymous]
-	public class ProductListingController : Controller
-	{
-		//isim ve ucret.
-		private readonly IProductService _productService;
+    [AllowAnonymous]
+    public class ProductListingController : Controller
+    {
+        //isim ve ucret.
+        private readonly IProductService _productService;
 
-		public ProductListingController(IProductRepo productService)
-		{
-			_productService = (IProductService?)productService;
+        public ProductListingController(IProductService productService)
+        {
+            _productService = (IProductService?)productService;
 
-		}
-
-
-		[HttpGet]
-		public IActionResult ProductListing()
-		{
-			var products = _productService.TGetList();
-          
-			return View(products);
-		}
+        }
 
 
+        [HttpGet]
+        public async Task<IActionResult> ProductListing()
+        {
+            var products = await _productService.TGetList();
 
-	}
+            List<ProductListingViewModel> productList = new List<ProductListingViewModel>();
+
+            ProductListingViewModel model = new ProductListingViewModel();
+
+            foreach (var item in products)
+            {
+                model.Name = item.Name;
+                model.Price = item.Price;
+
+                productList.Add(model);
+
+            }
+
+            return View(productList);
+        }
+
+
+
+    }
 }
 
