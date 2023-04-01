@@ -1,5 +1,6 @@
 ﻿using ECommerceProject.DataAccess.Abstract;
 using ECommerceProject.DataAccess.Concrete.EntityFramework;
+using ECommerceProject.Entity.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace ECommerceProject.DataAccess.Concrete
 {
-    public class RepositoryBase<T,TContext> : IRepositoryBase<T> where T : class, new() where TContext : DbContext, new()
+    public class RepositoryBase<T,TContext> : IRepositoryBase<T> where T : class, IEntity,new() where TContext : DbContext, new()
     {
         public async Task Add(T entity)
         {

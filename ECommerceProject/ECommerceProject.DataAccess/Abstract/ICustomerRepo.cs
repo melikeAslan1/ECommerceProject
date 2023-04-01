@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ECommerceProject.DataAccess.Abstract
 {
-    public interface ICustomerRepo :IRepositoryBase<Customer>
+    public interface ICustomerRepo : IRepositoryBase<Customer>
     {
     }
 }

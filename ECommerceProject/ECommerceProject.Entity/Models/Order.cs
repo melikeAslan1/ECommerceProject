@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ECommerceProject.Entity.Models
 {
-	public class Order : BaseEntity
-	{
+	public class Order : BaseEntity, IEntity
+    {
 		public string Address { get; set; }
 
 		public List<int> ProductIds { get; set; }

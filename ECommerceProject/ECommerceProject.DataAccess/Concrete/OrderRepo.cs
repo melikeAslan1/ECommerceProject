@@ -1,4 +1,5 @@
-﻿using ECommerceProject.DataAccess.Concrete.EntityFramework;
+﻿using ECommerceProject.DataAccess.Abstract;
+using ECommerceProject.DataAccess.Concrete.EntityFramework;
 using ECommerceProject.Entity.Models;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ECommerceProject.DataAccess.Concrete
 {
-    public class OrderRepo : RepositoryBase<Order, ECommerceProjectContext>
+    public class OrderRepo : RepositoryBase<Order, ECommerceProjectContext>, IOrderRepo
     {
     }
 }

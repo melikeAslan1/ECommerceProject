@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace ECommerceProject.Entity.Models
 {
-	public class ProductPicture : BaseEntity, IEntity
-	{
-		public string Picture { get; set; }
-
-		public int ProductId { get; set; }
-	}
+    public interface IEntity
+    {
+    }
 }

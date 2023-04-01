@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ECommerceProject.Entity.Models
 {
-	public class Product : BaseEntity
+	public class Product : BaseEntity, IEntity
 	{
 		public string Name { get; set; }
 
