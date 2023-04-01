@@ -15,7 +15,7 @@ namespace ECommerceProject.WEB.Controllers
 
         public ProductListingController(IProductService productService)
         {
-            _productService = (IProductService?)productService;
+            _productService =productService;
 
         }
 

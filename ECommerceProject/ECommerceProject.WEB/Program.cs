@@ -1,3 +1,6 @@
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
+using ECommerceProject.Business.DependencyResolvers.Autofac;
 using ECommerceProject.DataAccess.Concrete.EntityFramework;
 using ECommerceProject.Entities.IdentityModels;
 using Microsoft.AspNetCore.Authorization;
@@ -5,6 +8,12 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+
+builder.Services.AddCors();
+
+builder.Host.ConfigureContainer<ContainerBuilder>(builder => builder.RegisterModule(new AutofacBusinessModule()));
 
 // Add services to the container.
 
