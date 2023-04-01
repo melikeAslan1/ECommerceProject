@@ -25,13 +25,13 @@ namespace ECommerceProject.WEB.Controllers
         {
             var products = await _productService.TGetList();
 
-            List<ProductListingViewModel> productList = new List<ProductListingViewModel>();
-
-            ProductListingViewModel model = new ProductListingViewModel();
+            List<ProductViewModel> productList = new List<ProductViewModel>();
 
             foreach (var item in products)
             {
-                model.Name = item.Name;
+				ProductViewModel model = new ProductViewModel();
+                model.ProductId = item.Id;
+				model.Name = item.Name;
                 model.Price = item.Price;
 
                 productList.Add(model);

@@ -20,20 +20,21 @@ namespace ECommerceProject.Business.Concrete
 			throw new NotImplementedException();
 		}
 
-		public Order TGetById(int id)
+		public Task<Order> TGetById(int id)
 		{
 			throw new NotImplementedException();
 		}
 
-		
+		public Task<List<Order>> TGetList()
+		{
+			throw new NotImplementedException();
+		}
+
 		public void TUpdate(Order entity)
 		{
 			throw new NotImplementedException();
 		}
 
-		Task<List<Order>> IGenericService<Order>.TGetList()
-		{
-			throw new NotImplementedException();
-		}
+		
 	}
 }

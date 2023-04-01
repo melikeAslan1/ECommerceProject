@@ -16,6 +16,6 @@ namespace ECommerceProject.Business.Abstract
 
 		Task<List<T>> TGetList();
 
-		T TGetById(int id);	
+		Task<T> TGetById(int id);	
 	}
 }

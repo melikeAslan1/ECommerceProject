@@ -1,12 +1,30 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ECommerceProject.Business.Abstract;
+using ECommerceProject.WEB.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerceProject.WEB.Controllers
 {
-    public class ProductDetailController : Controller
+	[AllowAnonymous]
+	public class ProductDetailController : Controller
     {
-        public IActionResult ProductDetail()
+        private readonly IProductService _productService;
+
+		public ProductDetailController(IProductService productService)
+		{
+			_productService= productService;
+		}
+        public async Task<IActionResult> ProductDetail(int ProductId)
         {
-            return View();
+			var product = await _productService.TGetById(ProductId);
+
+			ProductViewModel model =new ProductViewModel();
+			model.ProductId = ProductId;
+			model.Price = product.Price;
+			model.Name= product.Name;
+			model.Description= product.Description;
+
+			return View(model);
         }
     }
 }

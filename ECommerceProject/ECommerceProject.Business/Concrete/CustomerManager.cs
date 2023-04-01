@@ -28,7 +28,12 @@ namespace ECommerceProject.Business.Concrete
 			throw new NotImplementedException();
 		}
 
-		public Customer TGetById(int id)
+		public Task<Customer> TGetById(int id)
+		{
+			throw new NotImplementedException();
+		}
+
+		public Task<List<Customer>> TGetList()
 		{
 			throw new NotImplementedException();
 		}
@@ -38,9 +43,6 @@ namespace ECommerceProject.Business.Concrete
 			throw new NotImplementedException();
 		}
 
-		Task<List<Customer>> IGenericService<Customer>.TGetList()
-		{
-			throw new NotImplementedException();
-		}
+		
 	}
 }
