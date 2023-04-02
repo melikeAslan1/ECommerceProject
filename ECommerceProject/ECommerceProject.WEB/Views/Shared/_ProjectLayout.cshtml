@@ -242,5 +242,39 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         });
 
     </script>
+
+    
+	<div id="PPMiniCart">
+		<form method="post" class action="checkout.html" target>
+			<button type="button" class="minicart-closer">x</button>
+
+			<ul>
+				<li class="minicart-item"></li>
+				<li class="minicart-item"></li>
+				<li class="minicart-item"></li>
+				<li class="minicart-item minicart-item-changed"></li>
+			</ul>
+
+			<div class="minicart-footer">
+				<div class="minicart-subtotal"> Subtotal: 55$buraya yaz..</div>
+
+				<button class="minicart-submit" type="submit" data-minicart-alt="undefined">
+					"Check Out With"
+					<img src="" width="65" height="18" alt="PayPal" />
+				</button>
+			</div>
+			<input type="hidden" name="cmd" value="_cart" />
+			<input type="hidden" name="upload" value="1" />
+			<input type="hidden" name="bn" value="MiniCart_AddToCart_WPS_US" />
+			<input type="hidden" name="business" value="" />
+			<input type="hidden" name="currency_code" value="USD" />
+			<input type="hidden" name="return" value="" />
+			<input type="hidden" name="cancel_return" value="" />
+
+		</form>
+
+	</div>
+
+
 </body>
 </html>
