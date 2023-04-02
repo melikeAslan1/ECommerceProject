@@ -1,24 +1,33 @@
 ﻿using ECommerceProject.Business.Abstract;
-using ECommerceProject.DataAccess.Abstract;
-using ECommerceProject.DataAccess.Concrete;
 using ECommerceProject.WEB.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerceProject.WEB.Controllers
 {
-    [AllowAnonymous]
-    public class ProductListingController : Controller
+	[AllowAnonymous]
+	public class ProductController : Controller
     {
-        //isim ve ucret.
         private readonly IProductService _productService;
 
-        public ProductListingController(IProductService productService)
+		public ProductController(IProductService productService)
+		{
+			_productService= productService;
+		}
+
+        [HttpGet]
+        public async Task<IActionResult> ProductDetail(int ProductId)
         {
-            _productService =productService;
+			var product = await _productService.TGetById(ProductId);
 
+			ProductViewModel model =new ProductViewModel();
+			model.ProductId = ProductId;
+			model.Price = product.Price;
+			model.Name= product.Name;
+			model.Description= product.Description;
+
+			return View(model);
         }
-
 
         [HttpGet]
         public async Task<IActionResult> ProductListing()
@@ -29,9 +38,9 @@ namespace ECommerceProject.WEB.Controllers
 
             foreach (var item in products)
             {
-				ProductViewModel model = new ProductViewModel();
+                ProductViewModel model = new ProductViewModel();
                 model.ProductId = item.Id;
-				model.Name = item.Name;
+                model.Name = item.Name;
                 model.Price = item.Price;
 
                 productList.Add(model);
@@ -40,9 +49,5 @@ namespace ECommerceProject.WEB.Controllers
 
             return View(productList);
         }
-
-
-
     }
 }
-
