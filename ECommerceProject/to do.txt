@@ -2,3 +2,6 @@
 2. images
 3. yönetim paneli
 4. logları ekle.
+5. yorum yapma alanı.
+6. iletişim alanı mesaj yollama.
+7. canlıya alma.
