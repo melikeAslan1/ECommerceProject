@@ -49,5 +49,7 @@ namespace ECommerceProject.WEB.Controllers
 
             return View(productList);
         }
-    }
+
+		
+	}
 }

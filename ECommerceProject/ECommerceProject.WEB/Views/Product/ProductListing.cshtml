@@ -33,61 +33,71 @@
     </div>
     <div class="w3l_banner_nav_right">
 
-		<div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_sub">
-			<h3>Products</h3>
-			<div class="w3ls_w3l_banner_nav_right_grid1">
-				<h6></h6>
-				@{
-					foreach (var item in Model)
-					{
-						<div class="col-md-3 w3ls_w3l_banner_left">
-							<div class="hover14 column">
-								<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-									<div class="agile_top_brand_left_grid_pos">
-										<img src="images/offer.png" alt=" " class="img-responsive" />
-									</div>
-									<div class="agile_top_brand_left_grid1">
-										<figure>
-											<div class="snipcart-item block">
-												<div class="snipcart-thumb">
-													<a href="@Url.Action("ProductDetail", "Product", new { ProductId = @item.ProductId })"><img src="images/17.png" alt=" " class="img-responsive" /></a>
-													<p>@item.Name</p>
-													<h4>$@item.Price <span></span></h4>
-												</div>
-											<div class="snipcart-details">
-													<form action="#" method="post">
-														<fieldset>
-															<input type="hidden" name="cmd" value="_cart" />
-															<input type="hidden" name="add" value="1" />
-															<input type="hidden" name="business" value=" " />
-															<input type="hidden" name="item_name" value="dishwash gel, lemon" />
-															<input type="hidden" name="amount" value="8.00" />
-															<input type="hidden" name="discount_amount" value="1.00" />
-															<input type="hidden" name="currency_code" value="USD" />
-															<input type="hidden" name="return" value=" " />
-															<input type="hidden" name="cancel_return" value=" " />
-															<input type="submit" name="submit" value="Add to cart" class="button" />
-															
-														</fieldset>
-													</form>
-												</div>
+        <div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_sub">
+            <h3>Products</h3>
+            <div class="w3ls_w3l_banner_nav_right_grid1">
+                <h6></h6>
+                @{
+                    foreach (var item in Model)
+                    {
+                        <div class="col-md-3 w3ls_w3l_banner_left">
+                            <div class="hover14 column">
+                                <div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+                                    <div class="agile_top_brand_left_grid_pos">
+                                        <img src="images/offer.png" alt=" " class="img-responsive" />
+                                    </div>
+                                    <div class="agile_top_brand_left_grid1">
+                                        <figure>
+                                            <div class="snipcart-item block">
+                                                <div class="snipcart-thumb">
+                                                    <a href="@Url.Action("ProductDetail", "Product", new { ProductId = @item.ProductId })"><img src="images/17.png" alt=" " class="img-responsive" /></a>
+                                                    <p>@item.Name</p>
+                                                    <h4>$@item.Price <span></span></h4>
+                                                </div>
+                                                <div class="snipcart-details">
 
 
-											</div>
-										</figure>
-									</div>
-								</div>
-							</div>
-						</div>
-					}
-				}
+                                                    <!--	<div class="w3l_header_right1">
+                                                    <form action="/Product/AddingToCart/" method="post">
+                                                        <fieldset>
+                                                            <input type="submit" name="cmd" value="Add To Cart" />
+                                                            <input type="hidden" name="add" value="1" />
+                                                            <input type="hidden" name="business" value=" " />
+                                                            <input type="hidden" name="item_name" value="dishwash gel, lemon" />
+                                                            <input type="hidden" name="amount" value="8.00" />
+                                                            <input type="hidden" name="discount_amount" value="1.00" />
+                                                            <input type="hidden" name="currency_code" value="USD" />
+                                                            <input type="hidden" name="return" value=" " />
+                                                            <input type="hidden" name="cancel_return" value=" " />
+                                                            <input type="submit" name="submit" value="Add to cart" class="button" />
 
-				
-				
-				<div class="clearfix"> </div>
-			</div>
-		
-		</div>
+                                                        </fieldset>
+                                                    </form>  -->
+
+
+                                                    <div class="w3l_header_right1">
+                                                        <h2><a href="@Url.Action("Cart", "Cart", new { ProductId = @item.ProductId })">Add To   
+                                                        
+                                                        Cart</a></h2>
+
+                                                    </div>
+
+
+                                                </div>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+
+
+
+                <div class="clearfix"> </div>
+            </div>
+
+        </div>
 
 
     </div>

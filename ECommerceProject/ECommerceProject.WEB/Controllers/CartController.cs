@@ -10,5 +10,15 @@ namespace ECommerceProject.WEB.Controllers
 		{
 			return View();
 		}
-	}
+
+        [HttpGet]
+        public async Task<IActionResult> Cart(int ProductId)
+        {
+            List<int> productIds = new List<int>();
+
+            productIds.Add(ProductId);
+
+            return View();
+        }
+    }
 }

@@ -1,0 +1,4 @@
+1. add to cart
+2. images
+3. yönetim paneli
+4. logları ekle.
