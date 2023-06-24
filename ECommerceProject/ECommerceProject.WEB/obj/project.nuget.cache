@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QQIYRc8H5fgEoG7xVThqe/74r4CH8S2auw5LBVtFzOrGDWNqdni2PvSi4VIv4moCnTKuR44vgwz+TZ8xP8WKqg==",
+  "dgSpecHash": "emzPQkNsrV33Ae+aV4Sh82NRxUHWEuNdHD86cHcHn2JDzqU1gUnFDHgdMh1KaZx7isC3rYJcliW/ZOeYzOizsw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MelikeAslan\\Documents\\GitHub\\ECommerceProjectCase\\ECommerceProject\\ECommerceProject.WEB\\ECommerceProject.WEB.csproj",
+  "projectFilePath": "C:\\Users\\MelikeAslan\\Documents\\GitHub\\ECommerceProject\\ECommerceProject\\ECommerceProject.WEB\\ECommerceProject.WEB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MelikeAslan\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\MelikeAslan\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",

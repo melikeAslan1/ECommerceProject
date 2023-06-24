@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C3y+czxvskK8AM3HE+KfzVfhh0F9VlxyRBA1a6ZffrHBOtrTlDJNf2KE7OdzQ6B9/l5oZRrP/56uN5tMq9qmhQ==",
+  "dgSpecHash": "XnPl6TZC2ybY6QYPH25T+otWygy/2Uq7rE3PTQK5BA8NThvTb2Uc+7LA8yOpFI6qUd3y5kMdyIsNmgKU6WibKA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MelikeAslan\\Documents\\GitHub\\ECommerceProjectCase\\ECommerceProject\\ECommerceProject.DataAccess\\ECommerceProject.DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\MelikeAslan\\Documents\\GitHub\\ECommerceProject\\ECommerceProject\\ECommerceProject.DataAccess\\ECommerceProject.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MelikeAslan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\MelikeAslan\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

@@ -9,61 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ECommerceProject.WEB
 build_property.RootNamespace = ECommerceProject.WEB
-build_property.ProjectDir = C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.WEB\
+build_property.ProjectDir = C:\Users\MelikeAslan\Documents\GitHub\ECommerceProject\ECommerceProject\ECommerceProject.WEB\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\MelikeAslan\Documents\GitHub\ECommerceProjectCase\ECommerceProject\ECommerceProject.WEB
+build_property.MSBuildProjectDirectory = C:\Users\MelikeAslan\Documents\GitHub\ECommerceProject\ECommerceProject\ECommerceProject.WEB
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProjectCase/ECommerceProject/ECommerceProject.WEB/Views/Cart/Cart.cshtml]
+[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProject/ECommerceProject/ECommerceProject.WEB/Views/Cart/Cart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProjectCase/ECommerceProject/ECommerceProject.WEB/Views/Home/Index.cshtml]
+[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProject/ECommerceProject/ECommerceProject.WEB/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProjectCase/ECommerceProject/ECommerceProject.WEB/Views/Home/Privacy.cshtml]
+[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProject/ECommerceProject/ECommerceProject.WEB/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProjectCase/ECommerceProject/ECommerceProject.WEB/Views/Login/SignIn.cshtml]
+[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProject/ECommerceProject/ECommerceProject.WEB/Views/Login/SignIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cU2lnbkluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProjectCase/ECommerceProject/ECommerceProject.WEB/Views/Login/SignUp.cshtml]
+[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProject/ECommerceProject/ECommerceProject.WEB/Views/Login/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cU2lnblVwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProjectCase/ECommerceProject/ECommerceProject.WEB/Views/Product/ProductDetail.cshtml]
+[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProject/ECommerceProject/ECommerceProject.WEB/Views/Product/ProductDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0RGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProjectCase/ECommerceProject/ECommerceProject.WEB/Views/Product/ProductListing.cshtml]
+[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProject/ECommerceProject/ECommerceProject.WEB/Views/Product/ProductListing.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0TGlzdGluZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProjectCase/ECommerceProject/ECommerceProject.WEB/Views/Shared/Error.cshtml]
+[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProject/ECommerceProject/ECommerceProject.WEB/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProjectCase/ECommerceProject/ECommerceProject.WEB/Views/Shared/_ProjectLayout.cshtml]
+[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProject/ECommerceProject/ECommerceProject.WEB/Views/Shared/_ProjectLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Qcm9qZWN0TGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProjectCase/ECommerceProject/ECommerceProject.WEB/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProject/ECommerceProject/ECommerceProject.WEB/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProjectCase/ECommerceProject/ECommerceProject.WEB/Views/_ViewImports.cshtml]
+[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProject/ECommerceProject/ECommerceProject.WEB/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProjectCase/ECommerceProject/ECommerceProject.WEB/Views/_ViewStart.cshtml]
+[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProject/ECommerceProject/ECommerceProject.WEB/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProjectCase/ECommerceProject/ECommerceProject.WEB/Views/Shared/_Layout.cshtml]
+[C:/Users/MelikeAslan/Documents/GitHub/ECommerceProject/ECommerceProject/ECommerceProject.WEB/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-t0zni81hsu

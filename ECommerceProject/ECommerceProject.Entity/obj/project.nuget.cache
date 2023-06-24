@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rXuFygs01WuPLANlu/VTucs0QaBIlGGuLoQwsJ7v1BVwsXkhhX8I6l/5cznKNpkfwxc4jFRvpyk3HNwLbmJOag==",
+  "dgSpecHash": "yUQSQnlQpYZMCbnUcq//oqeh6l+945JbsaU/jU7CNA4K/GFFRLv0Eci+cMp1En04AMX4Ejd4c3rBbSOgHqPaQA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MelikeAslan\\Documents\\GitHub\\ECommerceProjectCase\\ECommerceProject\\ECommerceProject.Entity\\ECommerceProject.Entity.csproj",
+  "projectFilePath": "C:\\Users\\MelikeAslan\\Documents\\GitHub\\ECommerceProject\\ECommerceProject\\ECommerceProject.Entity\\ECommerceProject.Entity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MelikeAslan\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\MelikeAslan\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

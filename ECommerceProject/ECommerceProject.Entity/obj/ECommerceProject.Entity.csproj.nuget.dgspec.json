@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MelikeAslan\\Documents\\GitHub\\ECommerceProjectCase\\ECommerceProject\\ECommerceProject.Entity\\ECommerceProject.Entity.csproj": {}
+    "C:\\Users\\MelikeAslan\\Documents\\GitHub\\ECommerceProject\\ECommerceProject\\ECommerceProject.Entity\\ECommerceProject.Entity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MelikeAslan\\Documents\\GitHub\\ECommerceProjectCase\\ECommerceProject\\ECommerceProject.Entity\\ECommerceProject.Entity.csproj": {
+    "C:\\Users\\MelikeAslan\\Documents\\GitHub\\ECommerceProject\\ECommerceProject\\ECommerceProject.Entity\\ECommerceProject.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MelikeAslan\\Documents\\GitHub\\ECommerceProjectCase\\ECommerceProject\\ECommerceProject.Entity\\ECommerceProject.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\MelikeAslan\\Documents\\GitHub\\ECommerceProject\\ECommerceProject\\ECommerceProject.Entity\\ECommerceProject.Entity.csproj",
         "projectName": "ECommerceProject.Entity",
-        "projectPath": "C:\\Users\\MelikeAslan\\Documents\\GitHub\\ECommerceProjectCase\\ECommerceProject\\ECommerceProject.Entity\\ECommerceProject.Entity.csproj",
+        "projectPath": "C:\\Users\\MelikeAslan\\Documents\\GitHub\\ECommerceProject\\ECommerceProject\\ECommerceProject.Entity\\ECommerceProject.Entity.csproj",
         "packagesPath": "C:\\Users\\MelikeAslan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MelikeAslan\\Documents\\GitHub\\ECommerceProjectCase\\ECommerceProject\\ECommerceProject.Entity\\obj\\",
+        "outputPath": "C:\\Users\\MelikeAslan\\Documents\\GitHub\\ECommerceProject\\ECommerceProject\\ECommerceProject.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
