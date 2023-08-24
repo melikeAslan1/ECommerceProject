@@ -28,6 +28,15 @@ namespace ECommerceProject.Business.Concrete
 			throw new NotImplementedException();
 		}
 
+		public async Task<List<Product>> TGetByCategoryId(int categoryId)
+		{
+
+			var products=await _productRepo.GetList(m=>m.CategoryId== categoryId);
+
+			return products;
+
+		}
+
 		public async Task<Product> TGetById(int id)
 		{
 			Product product = await _productRepo.Get(x => x.Id == id);

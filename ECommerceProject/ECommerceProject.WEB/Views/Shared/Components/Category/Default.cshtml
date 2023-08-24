@@ -1,0 +1,14 @@
+﻿@model List<CategoryVM>
+
+<ul class="nav navbar-nav nav_1">
+
+    @foreach (var category in Model)
+    {
+       @* <li><a href="/Product/ProductListing/@category.CategoryId">@category.CategoryName</a></li>*@
+
+        <li>
+            <a href="@Url.Action("ProductListing","Product",new { categoryId=category.CategoryId})">@category.CategoryName</a></li>
+    }
+    
+
+</ul>

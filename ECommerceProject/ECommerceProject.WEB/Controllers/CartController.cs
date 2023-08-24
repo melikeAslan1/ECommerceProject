@@ -5,7 +5,7 @@ namespace ECommerceProject.WEB.Controllers
 {
 	public class CartController : Controller
 	{
-		[AllowAnonymous]
+		//[AllowAnonymous]
 		public IActionResult Cart()
 		{
 			return View();

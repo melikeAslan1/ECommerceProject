@@ -1,4 +1,6 @@
 ﻿@model List<ECommerceProject.WEB.Models.ProductViewModel>
+
+
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_ProjectLayout.cshtml";
@@ -9,29 +11,18 @@
     <div class="container">
         <ul>
             <li><i class="fa fa-home" aria-hidden="true"></i><a href="/Home/Index/">Home</a><span>|</span></li>
-            <li>Products</li>
+            <li>@ViewBag.CategoryName</li>
         </ul>
     </div>
 </div>
 <!-- //products-breadcrumb -->
 <!-- banner -->
 <div class="banner">
-    <div class="w3l_banner_nav_left">
-        <nav class="navbar nav_bottom">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header nav_2">
-                <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
 
-        </nav>
-    </div>
+    
     <div class="w3l_banner_nav_right">
+
+       
 
         <div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_sub">
             <h3>Products</h3>
@@ -50,7 +41,7 @@
                                         <figure>
                                             <div class="snipcart-item block">
                                                 <div class="snipcart-thumb">
-                                                    <a href="@Url.Action("ProductDetail", "Product", new { ProductId = @item.ProductId })"><img src="images/17.png" alt=" " class="img-responsive" /></a>
+                                                    <a href="@Url.Action("ProductDetail", "Product", new { ProductId = @item.ProductId })"><img src="@item.ImageUrl" alt=" " class="img-responsive" /></a>
                                                     <p>@item.Name</p>
                                                     <h4>$@item.Price <span></span></h4>
                                                 </div>
@@ -76,9 +67,13 @@
 
 
                                                     <div class="w3l_header_right1">
-                                                        <h2><a href="@Url.Action("Cart", "Cart", new { ProductId = @item.ProductId })">Add To   
-                                                        
-                                                        Cart</a></h2>
+                                                        <h2>
+                                                            <a href="@Url.Action("Cart", "Cart", new { ProductId = @item.ProductId })">
+                                                                Add To
+
+                                                                Cart
+                                                            </a>
+                                                        </h2>
 
                                                     </div>
 
@@ -96,6 +91,8 @@
 
                 <div class="clearfix"> </div>
             </div>
+
+
 
         </div>
 

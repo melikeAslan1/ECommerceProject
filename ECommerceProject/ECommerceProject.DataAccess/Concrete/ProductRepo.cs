@@ -10,8 +10,8 @@ using System.Threading.Tasks;
 
 namespace ECommerceProject.DataAccess.Concrete
 {
-    public class ProductRepo : RepositoryBase<Product, ECommerceProjectContext>, IProductRepo
-    {
-        
-    }
+	public class ProductRepo : RepositoryBase<Product, ECommerceProjectContext>, IProductRepo
+	{
+		
+	}
 }

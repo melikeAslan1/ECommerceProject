@@ -21,7 +21,7 @@ namespace ECommerceProject.Business.DependencyResolvers.Autofac
 
 			builder.RegisterType<ProductManager>().As<IProductService>();
 
-			builder.RegisterType<ProductPictureManager>().As<IProductPictureService>();
+			builder.RegisterType<CategoryManager>().As<ICategoryService>();
 
 
 
@@ -31,7 +31,7 @@ namespace ECommerceProject.Business.DependencyResolvers.Autofac
 
 			builder.RegisterType<ProductRepo>().As<IProductRepo>();
 
-			builder.RegisterType<ProductPictureRepo>().As<IProductPictureRepo>();
+			builder.RegisterType<CategoryRepo>().As<ICategoryRepo>();
 
 			
 

@@ -1,8 +1,9 @@
-using Autofac;
+﻿using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using ECommerceProject.Business.DependencyResolvers.Autofac;
 using ECommerceProject.DataAccess.Concrete.EntityFramework;
 using ECommerceProject.Entities.IdentityModels;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Authorization;
@@ -19,6 +20,17 @@ builder.Host.ConfigureContainer<ContainerBuilder>(builder => builder.RegisterMod
 
 builder.Services.AddDbContext<ECommerceProjectContext>();  //
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<ECommerceProjectContext>();  //
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultSignOutScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+}).AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
+{
+    options.Cookie.Name = "YourCookieName";
+    // Diğer seçenekler...
+});
 
 builder.Services.Configure<IdentityOptions>(options =>
 {

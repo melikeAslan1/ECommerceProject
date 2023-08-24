@@ -1,5 +1,7 @@
 ﻿using ECommerceProject.Entities.IdentityModels;
 using ECommerceProject.WEB.Models;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -78,5 +80,17 @@ namespace ECommerceProject.WEB.Controllers
 			}
 			return View();
 		}
-	}
+
+        //[HttpPost]
+        public IActionResult LogOut()
+		{
+			
+            HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme).Wait();
+
+            return RedirectToAction("SignIn");
+		}
+
+
+
+    }
 }

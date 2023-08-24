@@ -54,8 +54,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </fieldset>
             </form>
         </div> -->
-
-      
         <div class="w3l_header_right">
             <ul>
                 <li class="dropdown profile_details_drop">
@@ -65,6 +63,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <ul class="dropdown-menu drp-mnu">
                                 <li><a href="/Login/SignIn/">Login</a></li>
                                 <li><a href="/Login/SignUp/">Sign Up</a></li>
+                                <li><a href="/Login/LogOut/">Log Out</a></li>
+
                             </ul>
                         </div>
                     </div>
@@ -97,7 +97,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="w3ls_logo_products_left">
                 <h1><a href="/Home/Index/"><span>Grocery</span> Store</a></h1>
             </div>
-          
+
             <div class="w3ls_logo_products_left1">
                 <ul class="phone_email">
                     <li><i class="fa fa-phone" aria-hidden="true"></i>(+0123) 234 567</li>
@@ -108,10 +108,53 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
     </div>
     <!-- //header -->
-  
-    @RenderBody()
+    <!-- banner -->
+    <div class="banner">
 
-    <!-- footer -->
+        <div class="w3l_banner_nav_left">
+            <nav class="navbar nav_bottom">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header nav_2">
+                    <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <!-- //orjinali kapatıyorum. -->
+                @* @{
+                var result = await Component.InvokeAsync("Home");
+                var viewComponentResult = result as ViewComponentResult;
+                if (viewComponentResult != null)
+                {
+                // Dönüşüm başarılı
+                // İlgili işlemleri gerçekleştirin
+                }
+                else
+                {
+                // Dönüşüm başarısız, hata durumu
+                }
+                }
+
+                *@
+
+                <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                  @await Component.InvokeAsync("Category")
+                </div>
+
+
+
+                <!-- /.navbar-collapse -->
+            </nav>
+        </div>
+
+    </div>
+    <!-- //banner -->
+    @RenderBody()
+@*    @RenderSection("Scripts", required: false)
+*@    <!-- footer -->
     <div class="footer">
         <div class="container">
             <div class="col-md-3 w3_footer_grid">
@@ -166,25 +209,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
                     <div class="w3_footer_grid_bottom">
                         <h4>100% secure payments</h4>
-                        <img src="images/card.png" alt=" " class="img-responsive" />
+                        <img src="~/web/images/card.png" alt=" " class="img-responsive" />
                     </div>
                 </div>
-                <div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
-                    <div class="w3_footer_grid_bottom">
-                        <h5>connect with us</h5>
-                        <ul class="agileits_social_icons">
-                            <li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                            <li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="#" class="dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+               
                 <div class="clearfix"> </div>
             </div>
             <div class="wthree_footer_copy">
-                <p>© 2016 Grocery Store. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+                <p>© 2023 Grocery Store. All rights reserved | Design by <a href="http://w3layouts.com/">Melike Aslan</a></p>
             </div>
         </div>
     </div>
@@ -245,37 +277,73 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     </script>
 
-    
-	@*<div id="PPMiniCart">
-		<form method="post" class action="checkout.html" target>
-			<button type="button" class="minicart-closer">x</button>
 
-			<ul>
-				<li class="minicart-item"></li>
-				<li class="minicart-item"></li>
-				<li class="minicart-item"></li>
-				<li class="minicart-item minicart-item-changed"></li>
-			</ul>
+    @* <script>
 
-			<div class="minicart-footer">
-				<div class="minicart-subtotal"> Subtotal: 55$buraya yaz..</div>
+    function LoadPrivacyPolicyContent() {
+    debugger
 
-				<button class="minicart-submit" type="submit" data-minicart-alt="undefined">
-					"Check Out With"
-					<img src="" width="65" height="18" alt="PayPal" />
-				</button>
-			</div>
-			<input type="hidden" name="cmd" value="_cart" />
-			<input type="hidden" name="upload" value="1" />
-			<input type="hidden" name="bn" value="MiniCart_AddToCart_WPS_US" />
-			<input type="hidden" name="business" value="" />
-			<input type="hidden" name="currency_code" value="USD" />
-			<input type="hidden" name="return" value="" />
-			<input type="hidden" name="cancel_return" value="" />
+    $ajax({
 
-		</form>
+    type: "GET",
+    url: "@Url.Action("BlogArticlesPartial","Home")",
 
-	</div>*@
+    data:{},
+    cache:false,
+    async:false,
+
+    success:function(data) {
+    $('#partial_view_div').html(data);
+    },
+    error:function(xhr, ajaxOptions,thrownError) {
+    aler('');
+    }
+
+
+
+
+    })
+
+
+
+
+    }
+
+
+
+    </script>*@
+
+
+    @*<div id="PPMiniCart">
+    <form method="post" class action="checkout.html" target>
+    <button type="button" class="minicart-closer">x</button>
+
+    <ul>
+    <li class="minicart-item"></li>
+    <li class="minicart-item"></li>
+    <li class="minicart-item"></li>
+    <li class="minicart-item minicart-item-changed"></li>
+    </ul>
+
+    <div class="minicart-footer">
+    <div class="minicart-subtotal"> Subtotal: 55$buraya yaz..</div>
+
+    <button class="minicart-submit" type="submit" data-minicart-alt="undefined">
+    "Check Out With"
+    <img src="" width="65" height="18" alt="PayPal" />
+    </button>
+    </div>
+    <input type="hidden" name="cmd" value="_cart" />
+    <input type="hidden" name="upload" value="1" />
+    <input type="hidden" name="bn" value="MiniCart_AddToCart_WPS_US" />
+    <input type="hidden" name="business" value="" />
+    <input type="hidden" name="currency_code" value="USD" />
+    <input type="hidden" name="return" value="" />
+    <input type="hidden" name="cancel_return" value="" />
+
+    </form>
+
+    </div>*@
 
 
 </body>

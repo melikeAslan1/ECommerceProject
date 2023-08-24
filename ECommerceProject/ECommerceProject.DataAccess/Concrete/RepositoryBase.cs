@@ -13,6 +13,7 @@ namespace ECommerceProject.DataAccess.Concrete
 {
     public class RepositoryBase<T,TContext> : IRepositoryBase<T> where T : class, IEntity,new() where TContext : DbContext, new()
     {
+        private readonly TContext _context;
         public async Task Add(T entity)
         {
             using (var context = new TContext())
@@ -34,12 +35,12 @@ namespace ECommerceProject.DataAccess.Concrete
         }
 
         public async Task<T> Get(Expression<Func<T, bool>> filter)
-        {
-            using (var context = new TContext())
-            {
-                return await context.Set<T>().SingleOrDefaultAsync(filter);
-            }
-        }
+             => await _context.Set<T>().FirstOrDefaultAsync(filter);
+            //using (var context = new TContext())
+            //{
+            //    return await context.Set<T>().SingleOrDefaultAsync(filter);
+            //}
+        
 
         public async Task<List<T>> GetList(Expression<Func<T, bool>> filter = null)
         {

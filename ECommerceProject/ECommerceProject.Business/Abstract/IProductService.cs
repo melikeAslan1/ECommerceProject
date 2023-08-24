@@ -1,4 +1,5 @@
 ﻿
+using ECommerceProject.Entities.ResultModels;
 using ECommerceProject.Entity.Models;
 using System;
 using System.Collections.Generic;
@@ -10,5 +11,6 @@ namespace ECommerceProject.Business.Abstract
 {
     public interface IProductService : IGenericService<Product>
 	{
-    }
+		Task<List<Product>> TGetByCategoryId(int categoryId);
+	}
 }
