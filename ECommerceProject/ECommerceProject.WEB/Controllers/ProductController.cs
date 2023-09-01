@@ -50,12 +50,12 @@ namespace ECommerceProject.WEB.Controllers
                 productList.Add(model);
 
             }
-            //if (categoryId != null) {
-            //    var category = await _categoryService.TGetById(categoryId);
-            //   // ViewBag.CategoryName = category.CategoryName;
-            //}
+          
+            var category = await _categoryService.TGetById(categoryId);
+            //ViewBag.CategoryName = category.CategoryName;
+            
 
-           
+
 
             return View(productList);
         }

@@ -1,6 +1,4 @@
-﻿
-
-@{
+﻿@{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_ProjectLayout.cshtml";
 }
@@ -56,21 +54,20 @@
         <!-- //flexSlider -->
     </div>
     <div class="clearfix"></div>
-
-	<!-- top-brands -->
-	<div class="top-brands">
-		<div class="container">
-			<h3>Products</h3>
-			<div class="agile_top_brands_grids">
-				@await Component.InvokeAsync("Product")
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<!-- //top-brands -->
-
 </div>
 <!-- banner -->
+<!-- top-brands -->
+<div class="top-brands">
+	<div class="container">
+		<h3>Products</h3>
+		<div class="agile_top_brands_grids">
+			@*@await Component.InvokeAsync("Product")  *@
+
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div> 
+<!-- //top-brands -->
 
 
 
